@@ -470,12 +470,13 @@ export default function App() {
           <button 
             onClick={handleStartProcess}
             disabled={
+              !selectedTopic ||
               isLoadingQuestions ||
               questions.length === 0
             }
             className={`
               w-full text-white font-bold py-3 rounded-xl shadow-md transition transform flex items-center justify-center flex-shrink-0
-              ${(isLoadingQuestions || questions.length === 0) 
+              ${(!selectedTopic || isLoadingQuestions || questions.length === 0) 
                  ? 'bg-gray-400 cursor-not-allowed opacity-70' 
                  : 'bg-blue-600 hover:bg-blue-700 active:scale-95'}
             `}
