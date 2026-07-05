@@ -91,7 +91,7 @@ export default function App() {
     { 
       id: 'all_topics', 
       name: 'Comprehensive Test', 
-      qTable: 'questions',
+      qTable: 'ana214questions',
       rTable: 'test_results',
       duration: 20, 
       marks: 2
