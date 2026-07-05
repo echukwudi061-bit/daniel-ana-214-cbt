@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     'questions3', 'test_resuts',
     'questions4', 'test_resuts',
     'questions5', 'test_resuts',
-    'questions', 'test_results'
+    'ana214questions', 'test_results'
   ];
 
   if (!allowedTables.includes(qTable) || !allowedTables.includes(rTable)) {
