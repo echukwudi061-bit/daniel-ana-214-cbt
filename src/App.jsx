@@ -455,15 +455,15 @@ export default function App() {
           <div className="text-left bg-gray-50 p-3 rounded-lg text-xs text-gray-700 mb-4 space-y-1">
             <p className="flex items-center">
               <Clock className="w-3.5 h-3.5 mr-2"/> 
-              <strong>Time Limit:</strong> {selectedTopic ? `${testDuration} Minutes` : <span className="text-red-500 font-bold italic">Select a topic first</span>}
+              <strong>Time Limit:</strong> {selectedTopic ? `${testDuration} Minutes` : <span className="text-gray-700 font-bold italic">Select a topic first</span>}
             </p>
             <p className="flex items-center">
               <FileText className="w-3.5 h-3.5 mr-2"/> 
-              <strong>Questions:</strong> {selectedTopic ? (isLoadingQuestions ? 'Loading...' : questions.length) : <span className="text-red-500 font-bold italic">Select a topic first</span>}
+              <strong>Questions:</strong> {selectedTopic ? (isLoadingQuestions ? 'Loading...' : questions.length) : <span className="text-grey-700 font-bold italic">Select a topic first</span>}
             </p>
             <p className="flex items-center">
               <Tag className="w-3.5 h-3.5 mr-2"/> 
-              <strong>Scoring:</strong> {selectedTopic ? `${marksPerQuestion} Marks / Question` : <span className="text-red-500 font-bold italic">Select a topic first</span>}
+              <strong>Scoring:</strong> {selectedTopic ? `${marksPerQuestion} Marks / Question` : <span className="text-gray-700 font-bold italic">Select a topic first</span>}
             </p>
           </div>
 
