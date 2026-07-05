@@ -99,7 +99,7 @@ export default function App() {
       rTable: 'test_results',
       duration: 20, 
       marks: 2,
-      status: 'locked'
+      status: 'free'
     }
   ];
 
