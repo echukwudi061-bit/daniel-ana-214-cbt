@@ -49,7 +49,7 @@ const GuestIdBadge = ({ id, className = "" }) => (
 export default function App() {
   // --- 1. CONFIGURATION STATE ---
   const [appName] = useState(() => localStorage.getItem('cbt_appName') || "DANIEL'S ANATOMY CBT APP");
-  const [testTitle] = useState(() => localStorage.getItem('cbt_testTitle') || "ANA 213: GENERAL EMBRYO AND GEBETICS");
+  const [testTitle] = useState(() => localStorage.getItem('cbt_testTitle') || "ANA 214: SYSTEMIC EMBRYOLOGY I");
   const [testDuration, setTestDuration] = useState(() => {
     const saved = localStorage.getItem('cbt_duration');
     return saved ? parseInt(saved, 10) : 20;
@@ -67,7 +67,7 @@ export default function App() {
   const TOPICS = [
     { 
       id: 'topic1', 
-      name: 'Chapter 1: Parasitism and other animals', 
+      name: 'Lecture 1: Parasitism and other animals', 
       qTable: 'questions1', 
       rTable: 'test_results',
       duration: 10, 
@@ -76,7 +76,7 @@ export default function App() {
     },
     { 
       id: 'topic2', 
-      name: 'chapter 2: Protozoan infectios and diseases', 
+      name: 'Lecture 2: Protozoan infectios and diseases', 
       qTable: 'questions2',
       rTable: 'test_results',
       duration: 10, 
@@ -85,75 +85,12 @@ export default function App() {
     },
     { 
       id: 'topic3', 
-      name: 'Chapter 3: Platyhelminthic Infections', 
+      name: 'Lecture 3: Platyhelminthic Infections', 
       qTable: 'questions3',
       rTable: 'test_results',
       duration: 10, 
       marks: 1,
       status: 'free'
-    },
-    { 
-      id: 'topic4', 
-      name: 'Chapter 4: Parasitic Nematode Infections', 
-      qTable: 'questions4',
-      rTable: 'test_results',
-      duration: 10, 
-      marks: 1,
-      status: 'locked'
-    },
-    { 
-      id: 'topic5', 
-      name: 'Chapter 5: Parasitic Arthropods other than insects', 
-      qTable: 'questions5',
-      rTable: 'test_results',
-      duration: 10, 
-      marks: 1,
-      status: 'locked'
-    },
-    { 
-      id: 'topic6', 
-      name: 'Chapter 6: Insects of medical importance ', 
-      qTable: 'questions6',
-      rTable: 'test_results',
-      duration: 10, 
-      marks: 1,
-      status: 'locked'
-    },
-    { 
-      id: 'topic7', 
-      name: 'Chapter 7: Viral infections and diseass', 
-      qTable: 'questions7',
-      rTable: 'test_results',
-      duration: 10, 
-      marks: 1,
-      status: 'locked'
-    },
-    { 
-      id: 'topic8', 
-      name: 'Chapter 8: Rickettsial, spirichaetal and bacterial diseases', 
-      qTable: 'questions8',
-      rTable: 'test_results',
-      duration: 10, 
-      marks: 1,
-      status: 'locked'
-    },
-    { 
-      id: 'topic9', 
-      name: 'Chapter 9: Basic immunology', 
-      qTable: 'questions9',
-      rTable: 'test_results',
-      duration: 10, 
-      marks: 1,
-      status: 'locked'
-    },
-    { 
-      id: 'topic10', 
-      name: 'Chapter 10: Basic practical parasitology', 
-      qTable: 'questions5',
-      rTable: 'test_results',
-      duration: 10, 
-      marks: 1,
-      status: 'locked'
     },
     { 
       id: 'all_topics', 
